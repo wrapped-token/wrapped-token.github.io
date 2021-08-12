@@ -11,18 +11,23 @@ const iconSize = 500;
 const features = [
   {
     color: "#00C853",
-    headline: "Feature 1",
-    text:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.",
+    headline: "Make Tokens Accessible Everywhere",
+    text: [
+      "With Extend supported blockchain networks, anyone can create a wrapped token on a new network.",
+      "Move tokens on Ethereum on to other networks such as Avalanche or Solana."
+    ],
     icon: <BuildIcon style={{ fontSize: iconSize }} />,
     mdDelay: "0",
     smDelay: "0"
   },
   {
     color: "#6200EA",
-    headline: "Feature 2",
-    text:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.",
+    headline: "Reduce Costs and Increase Transaction Speed",
+    text: [
+      "Reduce gas costs by transacting on networks iwth lower gas fees.",
+      "Alternatively, transact on networks with faster consensus protocols.",
+      "You have the choice of where you transact your tokens regardless of the network they're originally from."
+    ],
     icon: <CalendarTodayIcon style={{ fontSize: iconSize }} />,
     mdDelay: "200",
     smDelay: "200"

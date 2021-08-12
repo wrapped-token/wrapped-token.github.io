@@ -1,8 +1,9 @@
-import { createMuiTheme, responsiveFontSizes } from "@material-ui/core";
+import { responsiveFontSizes } from "@material-ui/core";
+import { createTheme } from '@material-ui/core/styles'
 
 // colors
-const primary = "#b3294e";
-const secondary = "#4829B2";
+const primary = "#E722C0"; // PINK COLOR
+const secondary = "#1285E3"; // BLUE COLOR
 const black = "#343a40";
 const darkBlack = "rgb(36, 40, 44)";
 const background = "#f5f5f5";
@@ -24,7 +25,7 @@ const xs = 0;
 // spacing
 const spacing = 8;
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: { main: primary },
     secondary: { main: secondary },

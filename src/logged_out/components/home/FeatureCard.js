@@ -6,6 +6,9 @@ const styles = theme => ({
   icon: {
 
   },
+  text: {
+    marginBottom: theme.spacing(2)
+  },
   content: {
     display: "flex",
     "flex-direction": "column",
@@ -31,9 +34,11 @@ function FeatureCard(props) {
         <Typography variant="h3" paragraph>
           {headline}
         </Typography>
-        <Typography variant="body1" color="textSecondary">
-          {text}
-        </Typography>
+        {text.map(elt => (
+          <Typography className={classes.text} variant="h5" color="textSecondary">
+            {elt}
+          </Typography>
+        ))}
       </Grid>
       <Grid
         item
@@ -50,7 +55,7 @@ FeatureCard.propTypes = {
   Icon: PropTypes.element.isRequired,
   color: PropTypes.string.isRequired,
   headline: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired
+  text: PropTypes.array.isRequired
 };
 
 export default withStyles(styles, { withTheme: true })(FeatureCard);

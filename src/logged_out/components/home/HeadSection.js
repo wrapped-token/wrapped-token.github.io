@@ -9,8 +9,7 @@ import {
   Hidden,
   Box,
   withStyles,
-  withWidth,
-  isWidthUp,
+  withWidth
 } from "@material-ui/core";
 import WaveBorder from "../../../shared/components/WaveBorder";
 import ZoomImage from "../../../shared/components/ZoomImage";
@@ -99,7 +98,7 @@ const styles = (theme) => ({
 });
 
 function HeadSection(props) {
-  const { classes, theme, width } = props;
+  const { classes, theme } = props;
   return (
     <Fragment>
       <div className={classNames("lg-p-top", classes.wrapper)}>
@@ -121,20 +120,18 @@ function HeadSection(props) {
                     >
                       <Box mb={4}>
                         <Typography
-                          variant={isWidthUp("lg", width) ? "h3" : "h4"}
+                          variant="h3"
                         >
-                          Free Template for building a SaaS app using
-                          Material-UI
+                          1-Click Wrapped Tokens
                         </Typography>
                       </Box>
                       <div>
                         <Box mb={2}>
                           <Typography
-                            variant={isWidthUp("lg", width) ? "h6" : "body1"}
+                            variant="h4"
                             color="textSecondary"
                           >
-                            Lorem ipsum dolor sit amet, consetetur sadipscing
-                            elitr, sed diam nonumy eirmod tempor invidunt
+                            Deploy wrapped tokens on new networks in a fast and straightforward manner.
                           </Typography>
                         </Box>
                         <Button
@@ -145,7 +142,7 @@ function HeadSection(props) {
                           classes={{ label: classes.extraLargeButtonLabel }}
                           href="https://github.com/dunky11/react-saas-template"
                         >
-                          Download from GitHub
+                          Join us Increasing Wrapped Token Options!
                         </Button>
                       </div>
                     </Box>

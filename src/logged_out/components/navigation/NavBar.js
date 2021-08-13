@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import {
     AppBar,
     Toolbar,
-    withStyles
+    withStyles,
+    Typography
 } from "@material-ui/core";
 
 const styles = theme => ({
@@ -38,12 +39,9 @@ function NavBar(props) {
         <div className={classes.root}>
             <AppBar position="fixed" className={classes.appBar}>
                 <Toolbar className={classes.toolbar}>
-                    <img
-                        src={`${process.env.PUBLIC_URL}/images/letterOnlyLogo.svg`}
-                        alt="Bruh"
-                        height="100"
-                        className={classes.logo}
-                    />
+                    <Typography variant="h4" color="textSecondary">
+                        Extend
+                    </Typography>
                 </Toolbar>
             </AppBar>
         </div>

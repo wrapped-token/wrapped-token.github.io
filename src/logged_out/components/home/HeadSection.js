@@ -12,7 +12,6 @@ import {
   withWidth
 } from "@material-ui/core";
 import WaveBorder from "../../../shared/components/WaveBorder";
-import ZoomImage from "../../../shared/components/ZoomImage";
 
 const styles = (theme) => ({
   extraLargeButtonLabel: {
@@ -124,16 +123,14 @@ function HeadSection(props) {
                         >
                           1-Click Wrapped Tokens
                         </Typography>
+                        <Typography
+                          variant="h5"
+                          color="textSecondary"
+                        >
+                          Deploy wrapped tokens on new networks in a fast and straightforward manner.
+                        </Typography>
                       </Box>
                       <div>
-                        <Box mb={2}>
-                          <Typography
-                            variant="h4"
-                            color="textSecondary"
-                          >
-                            Deploy wrapped tokens on new networks in a fast and straightforward manner.
-                          </Typography>
-                        </Box>
                         <Button
                           variant="contained"
                           color="secondary"
@@ -149,8 +146,8 @@ function HeadSection(props) {
                   </Grid>
                   <Hidden smDown>
                     <Grid item md={6}>
-                      <ZoomImage
-                        src={`${process.env.PUBLIC_URL}/images/logged_out/headerImage.jpg`}
+                      <img
+                        src={`${process.env.PUBLIC_URL}/images/main_graphic.jpg`}
                         className={classes.image}
                         alt="header example"
                       />

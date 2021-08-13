@@ -1,5 +1,5 @@
 {
-  "name": "react-saas-template",
+  "name": "extend-landing-page",
   "version": "1.0.0",
   "private": true,
   "homepage": "",
@@ -121,15 +121,8 @@
       "last 1 safari version"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dunky11/react-saas-template.git"
-  },
-  "author": "dunky11",
+  "author": "spvyerra",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dunky11/react-saas-template/issues"
-  },
   "jest": {
     "roots": [
       "<rootDir>/src"

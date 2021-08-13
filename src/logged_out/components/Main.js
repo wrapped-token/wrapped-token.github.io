@@ -7,8 +7,7 @@ import Footer from "./footer/Footer";
 import "aos/dist/aos.css";
 import CookieRulesDialog from "./cookies/CookieRulesDialog";
 import CookieConsent from "./cookies/CookieConsent";
-import Routing from "./Routing";
-import smoothScrollTop from "../../shared/functions/smoothScrollTop";
+import Home from "./home/Home";
 
 AOS.init({ once: true });
 
@@ -22,24 +21,7 @@ const styles = (theme) => ({
 function Main(props) {
   const { classes } = props;
   const [selectedTab, setSelectedTab] = useState(null);
-  const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
   const [isCookieRulesDialogOpen, setIsCookieRulesDialogOpen] = useState(false);
-
-  const selectHome = useCallback(() => {
-    smoothScrollTop();
-    document.title =
-      "WaVer - Free template for building a SaaS or admin application";
-    setSelectedTab("Home");
-  }, [setSelectedTab]);
-
-
-  const handleMobileDrawerOpen = useCallback(() => {
-    setIsMobileDrawerOpen(true);
-  }, [setIsMobileDrawerOpen]);
-
-  const handleMobileDrawerClose = useCallback(() => {
-    setIsMobileDrawerOpen(false);
-  }, [setIsMobileDrawerOpen]);
 
   const handleCookieRulesDialogOpen = useCallback(() => {
     setIsCookieRulesDialogOpen(true);
@@ -63,13 +45,8 @@ function Main(props) {
       <NavBar
         selectedTab={selectedTab}
         selectTab={setSelectedTab}
-        mobileDrawerOpen={isMobileDrawerOpen}
-        handleMobileDrawerOpen={handleMobileDrawerOpen}
-        handleMobileDrawerClose={handleMobileDrawerClose}
       />
-      <Routing
-        selectHome={selectHome}
-      />
+      <Home/>
       <Footer />
     </div>
   );

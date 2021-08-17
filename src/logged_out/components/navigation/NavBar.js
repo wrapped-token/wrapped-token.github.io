@@ -8,16 +8,18 @@ import {
     Button,
 } from "@material-ui/core";
 
+import LabTabs from './LabTabs';
 import logo from './jankLogo.png'
 
 const styles = theme => ({
     root: {
         flexGrow: 1,
-        textAlign: 'center',
+        // textAlign: 'center',
     },
     appBar: {
         boxShadow: theme.shadows[6],
-        backgroundColor: theme.palette.common.white
+        backgroundColor: theme.palette.background.paper,
+        // backgroundColor: theme.palette.common.white,
     },
     toolbar: {
         display: "flex",
@@ -64,13 +66,10 @@ function NavBar(props) {
                         Extend
                     </Typography>
 
-                    {Object.keys(props.tabs).map(tab => (
-                        <Button
-                            onClick={() => props.selectTab(tab)}
-                        >
-                            {tab}
-                        </Button>
-                    ))}
+                    <LabTabs
+                        tabs={props.tabs}
+                        selectTab={props.selectTab}
+                    />
                 </Toolbar>
             </AppBar>
         </div>

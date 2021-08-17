@@ -26,7 +26,7 @@ const tabs = {
 
 function Main(props) {
   const { classes } = props;
-  const [selectedTab, setSelectedTab] = useState(null);
+  const [selectedTab, setSelectedTab] = useState('Home');
   const [isCookieRulesDialogOpen, setIsCookieRulesDialogOpen] = useState(false);
 
   const handleCookieRulesDialogOpen = useCallback(() => {

@@ -4,8 +4,11 @@ import {
     AppBar,
     Toolbar,
     withStyles,
-    Typography
+    Typography,
+    Button,
 } from "@material-ui/core";
+
+import logo from './jankLogo.png'
 
 const styles = theme => ({
     appBar: {
@@ -14,7 +17,7 @@ const styles = theme => ({
     },
     toolbar: {
         display: "flex",
-        justifyContent: "center",
+        // justifyContent: 'center',
     },
     menuButtonText: {
         fontSize: theme.typography.body1.fontSize,
@@ -26,6 +29,10 @@ const styles = theme => ({
     },
     noDecoration: {
         textDecoration: "none !important"
+    },
+    title: {
+        flexGrow: 1,
+        justifyContent: 'center',
     },
     logo: {
         margin: 10
@@ -39,9 +46,26 @@ function NavBar(props) {
         <div className={classes.root}>
             <AppBar position="fixed" className={classes.appBar}>
                 <Toolbar className={classes.toolbar}>
-                    <Typography variant="h4" color="textSecondary">
+                    <img
+                        src={logo}
+                        alt='extend protocol logo'
+                        height='55px'
+                    />
+
+                    <Typography
+                        className={classes.title}
+                        variant="h4"
+                        color="textSecondary"
+                    >
                         Extend
                     </Typography>
+
+                    <Button
+                        target='_blank'
+                        href='https://wrapped-token.github.io/demo'
+                    >
+                        Demo
+                    </Button>
                 </Toolbar>
             </AppBar>
         </div>

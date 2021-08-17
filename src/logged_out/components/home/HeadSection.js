@@ -137,9 +137,10 @@ function HeadSection(props) {
                           fullWidth
                           className={classes.extraLargeButton}
                           classes={{ label: classes.extraLargeButtonLabel }}
-                          href="https://github.com/dunky11/react-saas-template"
+                          href="https://github.com/wrapped-token/wrapped-token.github.io"
+                          target='_blank'
                         >
-                          Join us Increasing Wrapped Token Options!
+                          Join us in expanding wrapped tokens!
                         </Button>
                       </div>
                     </Box>

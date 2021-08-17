@@ -82,7 +82,7 @@ const infos = [
   },
   {
     icon: <MailIcon />,
-    description: "support@company.com"
+    description: "extend-protocol@umich.edu"
   }
 ];
 
@@ -101,7 +101,7 @@ const socialIcons = [
       </svg>
     ),
     label: "Github",
-    href: "https://github.com/dunky11/react-saas-template"
+    href: "https://github.com/wrapped-token/wrapped-token.github.io"
   },
   {
     icon: (
@@ -226,8 +226,7 @@ function Footer(props) {
               About the Company
             </Typography>
             <Typography style={{ color: "#8f9296" }} paragraph>
-              Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
-              euismod convallis velit, eu auctor lacus vehicula sit amet.
+              Hello! We're Sai Yerra, Rutvi Shah, and George Fane, a team of three University of Michigan students with a passion for blockchain.
             </Typography>
             <Box display="flex">
               {socialIcons.map((socialIcon, index) => (
@@ -236,6 +235,7 @@ function Footer(props) {
                     aria-label={socialIcon.label}
                     className={classes.socialIcon}
                     href={socialIcon.href}
+                    target='_blank'
                   >
                     {socialIcon.icon}
                   </IconButton>

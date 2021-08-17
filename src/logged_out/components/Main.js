@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import CookieRulesDialog from "./cookies/CookieRulesDialog";
 import CookieConsent from "./cookies/CookieConsent";
 import Home from "./home/Home";
+import Demo from './demo/App';
 
 AOS.init({ once: true });
 
@@ -17,6 +18,11 @@ const styles = (theme) => ({
     overflowX: "hidden",
   },
 });
+
+const tabs = {
+    Home: <Home />,
+    Demo: <Demo />,
+}
 
 function Main(props) {
   const { classes } = props;
@@ -45,8 +51,9 @@ function Main(props) {
       <NavBar
         selectedTab={selectedTab}
         selectTab={setSelectedTab}
+        tabs={tabs}
       />
-      <Home/>
+      {tabs[selectedTab]}
       <Footer />
     </div>
   );

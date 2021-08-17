@@ -121,7 +121,7 @@ function HeadSection(props) {
                         <Typography
                           variant="h3"
                         >
-                          1-Click Wrapped Tokens
+                          One-Click Wrapped Tokens
                         </Typography>
                         <Typography
                           variant="h5"

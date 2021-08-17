@@ -11,10 +11,6 @@ import {
 import logo from './jankLogo.png'
 
 const styles = theme => ({
-    root: {
-        flexGrow: 1,
-        textAlign: 'center',
-    },
     appBar: {
         boxShadow: theme.shadows[6],
         backgroundColor: theme.palette.common.white
@@ -64,13 +60,12 @@ function NavBar(props) {
                         Extend
                     </Typography>
 
-                    {Object.keys(props.tabs).map(tab => (
-                        <Button
-                            onClick={() => props.selectTab(tab)}
-                        >
-                            {tab}
-                        </Button>
-                    ))}
+                    <Button
+                        target='_blank'
+                        href='https://wrapped-token.github.io/'
+                    >
+                        Home
+                    </Button>
                 </Toolbar>
             </AppBar>
         </div>
